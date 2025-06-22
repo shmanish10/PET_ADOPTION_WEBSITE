@@ -1,0 +1,135 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to right, #6b5281, rgb(119, 93, 93));
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f7fc;
+  box-sizing: border-box;
+}
+.login-form {
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.3rem;
+  color: #33035b;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+}
+.required {
+  color: red;
+}
+#email {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px !important;
+  font-size: 16px;
+  color: #333;
+  box-sizing: border-box;
+  background-color: rgb(245, 235, 235) !important;
+}
+#password {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px !important;
+  font-size: 16px;
+  color: #333;
+  box-sizing: border-box;
+  background-color: rgb(245, 235, 235) !important;
+}
+.inputs:focus {
+  border-color: #007bff;
+  outline: none;
+}
+.forgot-password {
+  text-align: right;
+  margin-bottom: 15px;
+}
+.forgot-password a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+button[type="submit"] {
+  margin: 0 auto;
+  padding: 10px 30px;
+  background-color: #550498;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button[type="submit"]:hover {
+  background-color: green;
+}
+.signup-text,
+.terms-text {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+}
+.signup-text a,
+.terms-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+.signup-text a:hover,
+.terms-text a:hover {
+  text-decoration: underline;
+}
+.message {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.message.error {
+  color: red;
+}
+@media (max-width: 600px) {
+  .login-form {
+    padding: 20px;
+    max-width: 90%;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .login-container {
+    padding: 20px;
+    height: auto; /* allow scroll if needed */
+  }
+  .login-form {
+    max-width: 100%;
+    width: 100%;
+  }
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+  }
+  .forgot-password {
+    text-align: center;
+  }
+}

@@ -1,0 +1,115 @@
+.signup-container {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 50px;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #6b5281, rgb(119, 93, 93));
+}
+.signup-form {
+  background-color: white;
+  padding: 10px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.3rem;
+  color: #33035b;
+}
+label {
+  display: block;
+  margin-bottom: 2px;
+  font-weight: 500;
+  color: #555;
+}
+.required {
+  color: red;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px !important;
+  font-size: 16px;
+  color: #333;
+  box-sizing: border-box;
+  background-color: rgb(245, 235, 235) !important;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #550498;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button[type="submit"]:hover {
+  background-color: green;
+}
+.login-text,
+.terms-text {
+  text-align: center;
+  margin: 4px;
+  font-size: 14px;
+  color: #777;
+}
+.login-text a,
+.terms-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+.login-text a:hover,
+.terms-text a:hover {
+  text-decoration: underline;
+}
+.message {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.message.error {
+  color: red;
+}
+@media (max-width: 600px) {
+  .signup-form {
+    padding: 20px;
+    max-width: 90%;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .signup-container {
+    flex-direction: column;
+    padding: 30px 15px;
+    min-height: 100vh; /* ensures center alignment on small screens */
+  }
+  .signup-form {
+    width: 100%;
+    max-width: 100%;
+  }
+  button[type="submit"] {
+    width: 100%;
+  }
+}
