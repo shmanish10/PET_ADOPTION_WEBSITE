@@ -1,10 +1,9 @@
 .signup-container {
   display: flex;
-  justify-content: center;
   margin: 0;
-  padding: 50px;
+  padding: 40px 20px;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(to right, #6b5281, rgb(119, 93, 93));
 }
 .signup-form {
@@ -32,9 +31,9 @@ label {
 .required {
   color: red;
 }
-input[type="text"],
-input[type="email"],
-input[type="password"] {
+input[type='text'],
+input[type='email'],
+input[type='password'] {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
@@ -45,13 +44,13 @@ input[type="password"] {
   box-sizing: border-box;
   background-color: rgb(245, 235, 235) !important;
 }
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus {
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus {
   border-color: #007bff;
   outline: none;
 }
-button[type="submit"] {
+button[type='submit'] {
   padding: 10px 20px;
   background-color: #550498;
   color: white;
@@ -62,7 +61,7 @@ button[type="submit"] {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-button[type="submit"]:hover {
+button[type='submit']:hover {
   background-color: green;
 }
 .login-text,
@@ -102,14 +101,14 @@ button[type="submit"]:hover {
 @media (max-width: 768px) {
   .signup-container {
     flex-direction: column;
-    padding: 30px 15px;
+    padding: 30px 20px;
     min-height: 100vh; /* ensures center alignment on small screens */
   }
   .signup-form {
     width: 100%;
     max-width: 100%;
   }
-  button[type="submit"] {
+  button[type='submit'] {
     width: 100%;
   }
 }
